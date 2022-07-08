@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://daliydev.github.io/sitemap.xml
