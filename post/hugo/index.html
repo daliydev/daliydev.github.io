@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="jjh" /><meta name="description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="jjh" /><meta name="description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme 이름 git submodule" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="hugo &#43; github" />
-<meta property="og:description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme" />
+<meta property="og:description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme 이름 git submodule" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://daliydev.github.io/post/hugo/" /><meta property="article:section" content="post" />
 
 
 
 <meta itemprop="name" content="hugo &#43; github">
-<meta itemprop="description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme">
+<meta itemprop="description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme 이름 git submodule">
 
-<meta itemprop="wordCount" content="363">
+<meta itemprop="wordCount" content="391">
 <meta itemprop="keywords" content="hugo,github," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="hugo &#43; github"/>
-<meta name="twitter:description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme"/>
+<meta name="twitter:description" content="hugo 설치 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 brew install hugo # Github repository 2개 생성 (blog, {username}.github.io) # 프로젝트 생성 hugo new site blog git init # themes(https://themes.gohugo.io/) # theme 경로 themes/theme 이름 git submodule"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -172,10 +172,6 @@
 </span><span class="lnt">29
 </span><span class="lnt">30
 </span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">brew install hugo
@@ -195,10 +191,6 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># config.toml 수정</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># baseurl = &#34;https://&lt;username&gt;.github.io/&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 서버 실행 (localhost:1313)</span>
-</span></span><span class="line"><span class="cl">hugo server
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Github blog repository 연결</span>
 </span></span><span class="line"><span class="cl">git remote add origin https://<span class="o">{</span>token<span class="o">}</span>@github.com/wogns2645/blog.git
 </span></span><span class="line"><span class="cl">
@@ -213,6 +205,17 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 게시글 생성</span>
 </span></span><span class="line"><span class="cl">hugo new post/blod.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="서버-실행">서버 실행</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># local에서 미리 확인, -D : draft 속성이 true인 글도 보이는 옵션
+</span></span><span class="line"><span class="cl">hugo server -D
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="git-remotesubmodule-초기화">git remote/submodule 초기화</h3>
