@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://daliydev.github.io/post/selenium/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/redis/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -15,6 +21,12 @@
   
   <url>
     <loc>http://daliydev.github.io/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://daliydev.github.io/categories/crawling/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -44,6 +56,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/tags/java/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/tags/linux/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -63,6 +81,12 @@
   
   <url>
     <loc>http://daliydev.github.io/tags/redis/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://daliydev.github.io/tags/selenium/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
