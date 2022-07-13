@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>android on Even - A super concise theme for Hugo</title>
-    <link>http://daliydev.github.io/tags/android/</link>
+    <link>http://daliydev.github.io/categories/android/</link>
     <description>Recent content in android on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://daliydev.github.io/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://daliydev.github.io/categories/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[android] APK 디컴파일(jadx)</title>
       <link>http://daliydev.github.io/post/jadx/</link>
@@ -13,15 +13,6 @@
       
       <guid>http://daliydev.github.io/post/jadx/</guid>
       <description>무료로 APK 파일을 디컴파일해서 소스를 볼 수 있는 프로그램 https://github.com/skylot/jadx/releases</description>
-    </item>
-    
-    <item>
-      <title>[java] String 객체 메모리 취약점</title>
-      <link>http://daliydev.github.io/post/java-memory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://daliydev.github.io/post/java-memory/</guid>
-      <description>중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM</description>
     </item>
     
   </channel>
