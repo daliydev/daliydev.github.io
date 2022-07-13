@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>[java] String 객체 메모리 취약점</title>
+      <link>http://daliydev.github.io/post/java-memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java-memory/</guid>
+      <description>중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM</description>
+    </item>
+    
+    <item>
       <title>Amazon Linux 2 환경에서 redis 설치</title>
       <link>http://daliydev.github.io/post/redis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

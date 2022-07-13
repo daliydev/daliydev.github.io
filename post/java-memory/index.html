@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>java · Even - A super concise theme for Hugo</title>
+  <title>[java] String 객체 메모리 취약점 - Even - A super concise theme for Hugo</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="jjh" /><meta name="description" content="Hugo theme even example site." /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="jjh" /><meta name="description" content="중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -26,9 +26,7 @@
 <meta name="generator" content="Hugo 0.101.0 with theme even" />
 
 
-<link rel="canonical" href="http://daliydev.github.io/tags/java/" />
-  <link href="http://daliydev.github.io/tags/java/index.xml" rel="alternate" type="application/rss+xml" title="Even - A super concise theme for Hugo" />
-  <link href="http://daliydev.github.io/tags/java/index.xml" rel="feed" type="application/rss+xml" title="Even - A super concise theme for Hugo" />
+<link rel="canonical" href="http://daliydev.github.io/post/java-memory/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,15 +39,20 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="java" />
-<meta property="og:description" content="Hugo theme even example site." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://daliydev.github.io/tags/java/" />
+<meta property="og:title" content="[java] String 객체 메모리 취약점" />
+<meta property="og:description" content="중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://daliydev.github.io/post/java-memory/" /><meta property="article:section" content="post" />
 
-<meta itemprop="name" content="java">
-<meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="java"/>
-<meta name="twitter:description" content="Hugo theme even example site."/>
+
+
+<meta itemprop="name" content="[java] String 객체 메모리 취약점">
+<meta itemprop="description" content="중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM">
+
+<meta itemprop="wordCount" content="122">
+<meta itemprop="keywords" content="android,java," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[java] String 객체 메모리 취약점"/>
+<meta name="twitter:description" content="중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -119,36 +122,59 @@
     <main id="main" class="main">
       <div class="content-wrapper">
         <div id="content" class="content">
-          <section id="archive" class="archive">
-  <div class="archive-title tag">
-        <h2 class="archive-name">java</h2>
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[java] String 객체 메모리 취약점</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        <div class="post-category">
+            <a href="/categories/java/"> java </a>
+            </div>
+        
       </div>
+    </header>
 
-  <div class="archive-post">
-      <span class="archive-post-time">
-        0001-01-01
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/selenium/" class="archive-post-link">
-          [java] selenium
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        0001-01-01
-      </span>
-      <span class="archive-post-title">
-        <a href="/post/java-memory/" class="archive-post-link">
-          [java] String 객체 메모리 취약점
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <p>중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다.</p>
+<p>String 객체는 null을 대입해도, JVM에서 GC가 일어날 때까지 Reference 값만 바뀌기 때문에 기존 값은 남아 있는다.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">char</span><span class="o">[]</span> <span class="n">ch</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">id</span><span class="o">).</span><span class="na">toString</span><span class="o">().</span><span class="na">toCharArray</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">ch</span><span class="o">,</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span><span class="n">0x20</span><span class="o">);</span> <span class="c1">// 쓰고난 후 0x20값으로 Overwrite
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
-</section>
 
-<nav class="pagination">
-  
-  
-</nav>
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/android/">android</a>
+          <a href="/tags/java/">java</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/selenium/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[java] selenium</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/redis/">
+            <span class="next-text nav-default">Amazon Linux 2 환경에서 redis 설치</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
 
