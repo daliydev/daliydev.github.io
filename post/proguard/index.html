@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[android] Proguard(난독화) - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="jjh" /><meta name="description" content="ProGuard는 Java 코드를 축소, 최적화 및 난독화하는 오픈 소스 명령줄 도구입니다. 디컴파일시 코드가 노출되는 것을 방지 불필요한 메소드를 제거하여 멀티덱스" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.101.0 with theme even" />
+
+
+<link rel="canonical" href="http://daliydev.github.io/post/proguard/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[android] Proguard(난독화)" />
+<meta property="og:description" content="ProGuard는 Java 코드를 축소, 최적화 및 난독화하는 오픈 소스 명령줄 도구입니다. 디컴파일시 코드가 노출되는 것을 방지 불필요한 메소드를 제거하여 멀티덱스" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://daliydev.github.io/post/proguard/" /><meta property="article:section" content="post" />
+
+
+
+<meta itemprop="name" content="[android] Proguard(난독화)">
+<meta itemprop="description" content="ProGuard는 Java 코드를 축소, 최적화 및 난독화하는 오픈 소스 명령줄 도구입니다. 디컴파일시 코드가 노출되는 것을 방지 불필요한 메소드를 제거하여 멀티덱스">
+
+<meta itemprop="wordCount" content="936">
+<meta itemprop="keywords" content="android,proguard," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[android] Proguard(난독화)"/>
+<meta name="twitter:description" content="ProGuard는 Java 코드를 축소, 최적화 및 난독화하는 오픈 소스 명령줄 도구입니다. 디컴파일시 코드가 노출되는 것을 방지 불필요한 메소드를 제거하여 멀티덱스"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Daily</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Daily</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[android] Proguard(난독화)</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        <div class="post-category">
+            <a href="/categories/android/"> android </a>
+            </div>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <h3 id="proguard는-java-코드를-축소-최적화-및-난독화하는-오픈-소스-명령줄-도구입니다">ProGuard는 Java 코드를 축소, 최적화 및 난독화하는 오픈 소스 명령줄 도구입니다.</h3>
+<ul>
+<li>디컴파일시 코드가 노출되는 것을 방지</li>
+<li>불필요한 메소드를 제거하여 멀티덱스를 피할 수 있다.</li>
+</ul>
+<blockquote>
+<p><strong>멀티덱스</strong><br>
+안드로이드 앱을 구성하는 코드는 컴파일 되어 덱스(dex) 파일로 만들어 집니다. 하나의 덱스(dex) 파일에는 최대 65536개의 메소드만 참조 할 수 있습니다. 만약 프로젝트의 코드가 65536개의 메소드를 초과하게 되면 덱스(dex)파일이 여러개가 생성됩니다.
+그러면 멀티 덱스를 사용하여 컴파일 할 수 있지만, 빌드 과정에서 앱 내의 파일을 여러개의 덱스파일로 나누어야 하므로 빌드 속도가 느려지고 APK 용량이 커지게 됩니다.</p>
+</blockquote>
+<p>build.gradle</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gradle" data-lang="gradle"><span class="line"><span class="cl"><span class="n">buildTypes</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">release</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">debuggable</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl">        <span class="n">minifyEnabled</span> <span class="kc">true</span> <span class="c1">// true로 설정하면 proguard가 적용됨.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">shrinkResources</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">        <span class="n">proguardFiles</span> <span class="nf">getDefaultProguardFile</span><span class="o">(</span><span class="s1">&#39;proguard-android-optimize.txt&#39;</span><span class="o">),</span> <span class="s1">&#39;proguard-rules.pro&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>proguard-rules.pro</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># classType : class, interface, enum</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># methodType : 접근 지정자, return 타입 </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -keep [classType][packageName].[className] {</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#    [methodType][methodName]([params]);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ex) com.daily.package의 하위 클래스를 전부 난독화하지 않음</span>
+</span></span><span class="line"><span class="cl">-keep class com.daily.package.**
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ex) 패키지의 클래스중 public은 난독화 제외</span>
+</span></span><span class="line"><span class="cl">-keep class com.daily.package.** <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    public &lt;fields&gt;<span class="p">;</span>
+</span></span><span class="line"><span class="cl">    public &lt;methods&gt;<span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ex) com.daily.package 하위 클래스 중 public static만 난독화하지 않음</span>
+</span></span><span class="line"><span class="cl">-keep class com.daily.package.** <span class="o">{</span>    
+</span></span><span class="line"><span class="cl">    public static &lt;fields&gt;<span class="p">;</span>    
+</span></span><span class="line"><span class="cl">    public static &lt;methods&gt;<span class="p">;</span>    
+</span></span><span class="line"><span class="cl">    public &lt;methods&gt;<span class="p">;</span>    
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 소스파일의 라인은 섞지 않음</span>
+</span></span><span class="line"><span class="cl">-keepattributes SourceFile,LineNumberTable
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 소스파일의 변수명 변경</span>
+</span></span><span class="line"><span class="cl">-renamesourcefileattribute SourceFile
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 모든 인터페이스를 난독화하지 않음</span>
+</span></span><span class="line"><span class="cl">-keep interface * <span class="o">{</span>
+</span></span><span class="line"><span class="cl">  &lt;methods&gt;<span class="p">;</span>
+</span></span><span class="line"><span class="cl">  &lt;fields&gt;<span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 난독화 안하는 옵션</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -dontobfuscate </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 최적화 안하는 옵션</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -dontoptimize</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">출처: https://ocsoosoo.tistory.com/143 <span class="o">[</span>옥수수 농장:티스토리<span class="o">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 사용하지 않는 메소드 유지</span>
+</span></span><span class="line"><span class="cl">-dontshrink 
+</span></span><span class="line"><span class="cl"><span class="c1"># 경고 무시</span>
+</span></span><span class="line"><span class="cl">-ignorewarnings
+</span></span><span class="line"><span class="cl"><span class="c1"># 지정해서 무시</span>
+</span></span><span class="line"><span class="cl">-dontwarn packName.**
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ex) retrofit 통신할 때는 model의 난독화를 없애 주어야 한다. </span>
+</span></span><span class="line"><span class="cl">-keep class packageName.model.** <span class="o">{</span> *<span class="p">;</span> <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 라이브러리 jar를 읽는 동안 보이는 개인 또는 패키지 라이브러리 클래스를 간과하는 경향이 있으므로 아래 옵션을 사용하는 것이 좋다.</span>
+</span></span><span class="line"><span class="cl">-dontskipnonpubliclibraryclasses
+</span></span><span class="line"><span class="cl">-dontskipnonpubliclibraryclassmembers
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="__option-정리__"><strong>option 정리</strong></h3>
+<ul>
+<li>-dontwarn : 경고 무시</li>
+<li>-dontnote : Note를 무시한다 (proguard에서 Note는 컴파일러의 error)</li>
+<li>-ignorewarnings : 경고 무시</li>
+<li>-keep class|interface packageName.** : 난독화가 필요하지 않은 경우</li>
+<li>-dontoptimize : 최적화 하지 않기</li>
+<li>-dontshrink : 사용하지 않는 메소드 유지</li>
+<li>-keepclassmembers : 특정 클래스 멤버 원상태 유지</li>
+<li>-keepattributes : 내부 클래스 원상태 유지 적용</li>
+<li>-dontskipnonpubliclibraryclassmembers : 패키지에 표시되는 라이브러리 클랙스 멤버를 무시하지 않도록 지정</li>
+</ul>
+<p><strong>프로가드를 사용한다면 라이브러리가 잘 작동되는지 확인해 봐야 하고, 구성이 잘못될 경우 애플리케이션이 충돌할 수 있습니다. 이러한 예상치 못한 결과는 부정적인 영향을 미칠 수 있습니다.</strong></p>
+
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/android/">android</a>
+          <a href="/tags/proguard/">proguard</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/jadx/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[android] APK 디컴파일(jadx)</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/post/selenium/">
+            <span class="next-text nav-default">[java] selenium</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  <a href="http://daliydev.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>jjh</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
