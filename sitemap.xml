@@ -110,6 +110,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/etc/git-command/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/tags/github/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
