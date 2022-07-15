@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>memory on Even - A super concise theme for Hugo</title>
+    <link>http://daliydev.github.io/tags/memory/</link>
+    <description>Recent content in memory on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="http://daliydev.github.io/tags/memory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[linux] 버퍼/캐시 메모리 삭제</title>
+      <link>http://daliydev.github.io/post/linux-memory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/linux-memory/</guid>
+      <description>명령어 기반으로 터미널에서 간단히 사용할 수 있습니다. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 # 메모리 사용량 확인 free -m # 1 : pagecache, 2</description>
+    </item>
+    
+  </channel>
+</rss>

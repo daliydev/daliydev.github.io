@@ -295,7 +295,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">urlConnection</span><span class="o">.</span><span class="na">setReadTimeout</span><span class="o">(</span><span class="n">30000</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="n">InputStream</span> <span class="n">in</span> <span class="o">=</span> <span class="n">urlConnection</span><span class="o">.</span><span class="na">getInputStream</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">    <span class="n">OutputStream</span> <span class="n">out</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileOutputStream</span><span class="o">(</span><span class="n">file</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">readLine</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">1024</span><span class="o">];</span>
 </span></span><span class="line"><span class="cl">    <span class="k">while</span><span class="o">((</span><span class="n">readLine</span> <span class="o">=</span> <span class="n">in</span><span class="o">.</span><span class="na">read</span><span class="o">(</span><span class="n">buffer</span><span class="o">))</span> <span class="o">!=</span> <span class="o">-</span><span class="n">1</span><span class="o">){</span>

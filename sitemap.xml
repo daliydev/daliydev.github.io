@@ -32,6 +32,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/linux-memory/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/redis/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -111,6 +117,12 @@
   
   <url>
     <loc>http://daliydev.github.io/categories/linux/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://daliydev.github.io/tags/memory/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
