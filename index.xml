@@ -61,6 +61,15 @@
     </item>
     
     <item>
+      <title>[linux] oracle 원격 접속 (sqlplus)</title>
+      <link>http://daliydev.github.io/post/linux/sqlplus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/linux/sqlplus/</guid>
+      <description>리눅스에서 오라클 접속 하기. 시작 두 개의 파일 다운로드 ex) instantclient-basic-linux.x64-12.1.0.2.0.zip ex) instantclient-sqlplus-linux.x64-12.1.0.2.0.zip 서버 업로드하고 압축 해제 두 개의 파일이 한 곳에 해제됨 ex)instantclient_12_1 설치 받은 폴더 하위 디렉토리에 .bashrv 파일을 생</description>
+    </item>
+    
+    <item>
       <title>[linux] 버퍼/캐시 메모리 삭제</title>
       <link>http://daliydev.github.io/post/linux-memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
