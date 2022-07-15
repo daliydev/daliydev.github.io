@@ -16,6 +16,15 @@
     </item>
     
     <item>
+      <title>[java] PDF to JPG (pdfbox)</title>
+      <link>http://daliydev.github.io/post/java/pdf-to-jpg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/pdf-to-jpg/</guid>
+      <description>PDF를 이미지로 변환하기 위해 Apache pdfbox 라이브러리를 사용한다. gradle 1 implementation group: &amp;#39;org.apache.pdfbox&amp;#39;, name: &amp;#39;pdfbox&amp;#39;, version: &amp;#39;2.0.26&amp;#39; maven 1 2 3 4 5 &amp;lt;dependency&amp;gt; &amp;lt;groupId&amp;gt;org.apache.pdfbox&amp;lt;/groupId&amp;gt; &amp;lt;artifactId&amp;gt;pdfbox&amp;lt;/artifactId&amp;gt; &amp;lt;version&amp;gt;2.0.26&amp;lt;/version&amp;gt; &amp;lt;/dependency&amp;gt; 예제 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21</description>
+    </item>
+    
+    <item>
       <title>[java] String 객체 메모리 취약점</title>
       <link>http://daliydev.github.io/post/java-memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
