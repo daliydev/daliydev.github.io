@@ -61,6 +61,15 @@
     </item>
     
     <item>
+      <title>[linux] nginx permission denied error(403 Forbidden)</title>
+      <link>http://daliydev.github.io/post/linux/nginx-permission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/linux/nginx-permission/</guid>
+      <description>CentOS7) nginx 기동 후 permission denied이 발생하는 경우. 1 2 3 4 5 6 7 8 9 10 11 # /etc/nginx/nginx.conf 변경 # user nginx -&amp;gt; user root or 유저명 # 폴더 권한 조회 ls -lZd 경로 # nginx 가 읽을 수 있는 httpd_</description>
+    </item>
+    
+    <item>
       <title>[linux] oracle 원격 접속 (sqlplus)</title>
       <link>http://daliydev.github.io/post/linux/sqlplus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
