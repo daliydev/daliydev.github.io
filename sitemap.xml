@@ -38,6 +38,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/linux-command/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/redis/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
