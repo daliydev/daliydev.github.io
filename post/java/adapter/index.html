@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="jjh" /><meta name="description" content="서로 다른 인터페이스가 호환이 되지 않을 때 어댑터 클래스를 사용하는 것이, 해당 인터페이스에 영향을 받는 부분들을 수정하다가 시스템 장애가 발생하는 일은 막을 수 있" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="jjh" /><meta name="description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="[java] Adapter 패턴" />
-<meta property="og:description" content="서로 다른 인터페이스가 호환이 되지 않을 때 어댑터 클래스를 사용하는 것이, 해당 인터페이스에 영향을 받는 부분들을 수정하다가 시스템 장애가 발생하는 일은 막을 수 있" />
+<meta property="og:description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://daliydev.github.io/post/java/adapter/" /><meta property="article:section" content="post" />
 
 
 
 <meta itemprop="name" content="[java] Adapter 패턴">
-<meta itemprop="description" content="서로 다른 인터페이스가 호환이 되지 않을 때 어댑터 클래스를 사용하는 것이, 해당 인터페이스에 영향을 받는 부분들을 수정하다가 시스템 장애가 발생하는 일은 막을 수 있">
+<meta itemprop="description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기">
 
-<meta itemprop="wordCount" content="402">
+<meta itemprop="wordCount" content="412">
 <meta itemprop="keywords" content="design pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[java] Adapter 패턴"/>
-<meta name="twitter:description" content="서로 다른 인터페이스가 호환이 되지 않을 때 어댑터 클래스를 사용하는 것이, 해당 인터페이스에 영향을 받는 부분들을 수정하다가 시스템 장애가 발생하는 일은 막을 수 있"/>
+<meta name="twitter:description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -140,7 +140,8 @@
     <div class="post-content">
       <blockquote>
 <p><strong>서로 다른 인터페이스가 호환이 되지 않을 때</strong><br>
-어댑터 클래스를 사용하는 것이, 해당 인터페이스에 영향을 받는 부분들을 수정하다가 시스템 장애가 발생하는 일은 막을 수 있을 것이다.</p>
+인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, <br>
+어댑터 클래스를 만들어 기존 로직에 영향 없이 호환되게 한다.</p>
 </blockquote>
 <h3 id="__예시-1__"><strong>예시 1)</strong></h3>
 <p>예시) 코틀린 함수를 Java 언어의 함수로 대체 하려고 한다.</p>
