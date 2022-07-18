@@ -14,6 +14,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/adapter/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/java/resize/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

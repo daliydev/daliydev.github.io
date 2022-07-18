@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language><atom:link href="http://daliydev.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>[java] Adapter 패턴</title>
+      <link>http://daliydev.github.io/post/java/adapter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/adapter/</guid>
+      <description>서로 다른 인터페이스가 호환이 되지 않을 때 어댑터 클래스를 사용하는 것이, 해당 인터페이스에 영향을 받는 부분들을 수정하다가 시스템 장애가 발생하는 일은 막을 수 있</description>
+    </item>
+    
+    <item>
       <title>[java] image resize (javax.imageio.ImageIO)</title>
       <link>http://daliydev.github.io/post/java/resize/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
