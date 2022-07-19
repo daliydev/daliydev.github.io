@@ -70,6 +70,15 @@
     </item>
     
     <item>
+      <title>[java] Proxy 패턴</title>
+      <link>http://daliydev.github.io/post/java/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/proxy/</guid>
+      <description>프록시 패턴은 사용할 객체를 직접적으로 참조하는 것이 아닌 중간 객체를 통해 대상에 접근하는 방법이다. 단순히 보안상의 이유만으로 사용하는 것이 아닌, 캐싱 처리함</description>
+    </item>
+    
+    <item>
       <title>[java] selenium</title>
       <link>http://daliydev.github.io/post/selenium/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
