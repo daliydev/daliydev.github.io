@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>[java] Composite 패턴</title>
+      <link>http://daliydev.github.io/post/java/composite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/composite/</guid>
+      <description>컴포지트 패턴은 클라이언트가 복합 객체나 단일 객체를 동일하게 취급하는 것을 목적으로 한다. 전체 구조를 나타내기 위해 객체를 트리 구조로 구성합니다. 예제) 이동</description>
+    </item>
+    
+    <item>
       <title>[java] Factory 패턴</title>
       <link>http://daliydev.github.io/post/java/factory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
