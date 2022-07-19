@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>[java] Flyweight 패턴</title>
+      <link>http://daliydev.github.io/post/java/flyweight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/flyweight/</guid>
+      <description>플라이웨이트 패턴은 객체 생성 횟수를 줄이고, 메모리 사용량을 줄이고 성능을 개선하기 위해 사용합니다. (객체를 공유하는 방식으로 메모리 사용량을 줄임) 예시)</description>
+    </item>
+    
+    <item>
       <title>[java] Prototype 패턴</title>
       <link>http://daliydev.github.io/post/java/prototype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
