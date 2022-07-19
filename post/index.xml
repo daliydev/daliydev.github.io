@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>[java] Factory 패턴</title>
+      <link>http://daliydev.github.io/post/java/factory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/factory/</guid>
+      <description>팩토리 패턴은 객체 생성 로직을 분리하여 클라이언트와 결합도를 낮추어, 코드 변경 없이 기능을 확장하거나 변경할 수 있다 (OCP) 종류는 팩토리 메서드 패턴, 추상 팩토리 패</description>
+    </item>
+    
+    <item>
       <title>[java] image resize (javax.imageio.ImageIO)</title>
       <link>http://daliydev.github.io/post/java/resize/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
