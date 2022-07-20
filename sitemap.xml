@@ -32,6 +32,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/facade/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/java/factory/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

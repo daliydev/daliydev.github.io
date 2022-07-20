@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>[java] Facade 패턴</title>
+      <link>http://daliydev.github.io/post/java/facade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/facade/</guid>
+      <description>퍼사드 패턴은 구조 패턴의 한 종류이다. 설계의 목표는 서브시스템 간 종속성을 최소화하는 것. 서브시스템에 대한 의존성을 한곳으로 모을 수 있는 장점이 있지만, 클라</description>
+    </item>
+    
+    <item>
       <title>[java] Factory 패턴</title>
       <link>http://daliydev.github.io/post/java/factory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
