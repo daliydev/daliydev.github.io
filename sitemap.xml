@@ -32,6 +32,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/decorator/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/java/facade/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -164,13 +170,13 @@
   </url>
   
   <url>
-    <loc>http://daliydev.github.io/tags/design-pattern/</loc>
+    <loc>http://daliydev.github.io/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://daliydev.github.io/</loc>
+    <loc>http://daliydev.github.io/tags/design-pattern/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
