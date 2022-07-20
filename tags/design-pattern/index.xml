@@ -96,5 +96,14 @@
       <description>싱글톤은 오직 한 개의 인스턴스만 생성하여, 불필요한 객체 생성을 피한다. Eager Initialization 사용하지 않더라도 인스턴스가 항상 생성된다는 단점. static은 Class가</description>
     </item>
     
+    <item>
+      <title>[java] Template 패턴</title>
+      <link>http://daliydev.github.io/post/java/template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/template/</guid>
+      <description>템플릿 메서드 패턴은 공통으로 사용하는 메서드는 상위 클래스에서 정의하고, 다르게 구현할 메서드는 추상화하여 하위 클래스에서 구현하도록 하는 패턴이다. 코드 중</description>
+    </item>
+    
   </channel>
 </rss>

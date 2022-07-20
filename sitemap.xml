@@ -110,6 +110,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/template/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/linux/nginx-permission/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
