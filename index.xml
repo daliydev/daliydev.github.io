@@ -34,6 +34,15 @@
     </item>
     
     <item>
+      <title>[java] Bridge 패턴</title>
+      <link>http://daliydev.github.io/post/java/bridge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/bridge/</guid>
+      <description>브릿지 패턴은 기능과 구현에 대해 클래스를 분리하여 독립적으로 변경이 가능하고 확장이 가능하도록 합니다. 즉, 양쪽 클래스의 결합도가 낮아져서 독립적으로 변경과</description>
+    </item>
+    
+    <item>
       <title>[java] Composite 패턴</title>
       <link>http://daliydev.github.io/post/java/composite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
