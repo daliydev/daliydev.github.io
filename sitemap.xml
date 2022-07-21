@@ -80,6 +80,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/observer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/java/pdf-to-jpg/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -97,6 +97,15 @@
     </item>
     
     <item>
+      <title>[java] Observer 패턴</title>
+      <link>http://daliydev.github.io/post/java/observer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/observer/</guid>
+      <description>옵저버 패턴은 한 객체의 변경사항이 다른 객체들에 알려야 할 경우 사용한다.(one-to-many) 즉, 동적으로 변경이 필요한 경우 예제 1) 회사에서 임직원에</description>
+    </item>
+    
+    <item>
       <title>[java] PDF to JPG (pdfbox)</title>
       <link>http://daliydev.github.io/post/java/pdf-to-jpg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
