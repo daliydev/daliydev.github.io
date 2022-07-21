@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="dev" /><meta name="description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="dev" /><meta name="description" content="어댑터 패턴은 서로 다른 인터페이스가 호환이 되지 않을 때 사용한다. 인터페이스에 영향받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에," /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="[java] Adapter 패턴" />
-<meta property="og:description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기" />
+<meta property="og:description" content="어댑터 패턴은 서로 다른 인터페이스가 호환이 되지 않을 때 사용한다. 인터페이스에 영향받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에," />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://daliydev.github.io/post/java/adapter/" /><meta property="article:section" content="post" />
 
 
 
 <meta itemprop="name" content="[java] Adapter 패턴">
-<meta itemprop="description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기">
+<meta itemprop="description" content="어댑터 패턴은 서로 다른 인터페이스가 호환이 되지 않을 때 사용한다. 인터페이스에 영향받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에,">
 
-<meta itemprop="wordCount" content="412">
+<meta itemprop="wordCount" content="534">
 <meta itemprop="keywords" content="design pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[java] Adapter 패턴"/>
-<meta name="twitter:description" content="서로 다른 인터페이스가 호환이 되지 않을 때 인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기"/>
+<meta name="twitter:description" content="어댑터 패턴은 서로 다른 인터페이스가 호환이 되지 않을 때 사용한다. 인터페이스에 영향받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에,"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -138,13 +138,9 @@
 
     
     <div class="post-content">
-      <blockquote>
-<p><strong>서로 다른 인터페이스가 호환이 되지 않을 때</strong><br>
-인터페이스에 영향 받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, <br>
-어댑터 클래스를 만들어 기존 로직에 영향 없이 호환되게 한다.</p>
-</blockquote>
-<h3 id="__예시-1__"><strong>예시 1)</strong></h3>
-<p>예시) 코틀린 함수를 Java 언어의 함수로 대체 하려고 한다.</p>
+      <p><strong>어댑터 패턴은 서로 다른 인터페이스가 호환이 되지 않을 때 사용한다.</strong><br>
+인터페이스에 영향받는 부분들을 수정하다가 시스템 장애가 발생하는 일이 발생할 수 있기 때문에, 어댑터 클래스를 만들어 기존 로직에 영향 없이 호환되게 한다.</p>
+<h5 id="__예제-1-kotlinjava-함수-호환__"><strong>예제 1) Kotlin/Java 함수 호환</strong></h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -172,7 +168,7 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">JavaLanguage</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">sum</span><span class="o">(</span><span class="kt">int</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">b</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">100</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">1001</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
@@ -209,27 +205,31 @@
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">adapter</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-</span></span><span class="line"><span class="cl">        <span class="n">KotlinLanguage</span> <span class="n">adapter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Adapter</span><span class="o">(</span><span class="k">new</span> <span class="n">JavaLanguage</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="n">adapter</span><span class="o">.</span><span class="na">sum</span><span class="o">(</span><span class="n">1</span><span class="o">,</span> <span class="n">2</span><span class="o">);</span> <span class="c1">// java 메소드가 실행된다.
+</span></span><span class="line"><span class="cl">        <span class="n">KotlinLanguage</span> <span class="n">kotlinLanguage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">KotlinLanguage</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">kotlinLanguage</span><span class="o">.</span><span class="na">sum</span><span class="o">(</span><span class="n">0</span><span class="o">,</span> <span class="n">0</span><span class="o">));</span> <span class="c1">// KotlinLanguage 메서드가 실햄됨 1000
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">kotlinLanguage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Adapter</span><span class="o">(</span><span class="k">new</span> <span class="n">JavaLanguage</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">kotlinLanguage</span><span class="o">.</span><span class="na">sum</span><span class="o">(</span><span class="n">0</span><span class="o">,</span> <span class="n">0</span><span class="o">));</span> <span class="c1">// JavaLanguage 메서드가 실햄됨 1001
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="__예시-2__"><strong>예시 2)</strong></h3>
+</div><h5 id="__예제-2-java-언어에서-함수형-언어가-호환될-수-있도록-어댑터를-이용해-본다__"><strong>예제 2) Java 언어에서 함수형 언어가 호환될 수 있도록 어댑터를 이용해 본다.</strong></h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -237,7 +237,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Language</span> <span class="o">{</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Object</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">execute</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
@@ -249,8 +249,8 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">LangPackage</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">install</span><span class="o">();</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Functional</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -268,22 +268,18 @@
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nn">adapter</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LangAdapter</span> <span class="kd">implements</span> <span class="n">LangPackage</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Language</span> <span class="n">language</span><span class="o">;</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LanguageAdapter</span> <span class="kd">implements</span> <span class="n">Object</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Functional</span> <span class="n">functional</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">LangAdapter</span><span class="o">(</span><span class="n">Language</span> <span class="n">language</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">language</span> <span class="o">=</span> <span class="n">language</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="nf">LanguageAdapter</span><span class="o">(</span><span class="n">Functional</span> <span class="n">functional</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">functional</span> <span class="o">=</span> <span class="n">functional</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
-</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">install</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">language</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">functional</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
@@ -313,9 +309,10 @@
 </span><span class="lnt">21
 </span><span class="lnt">22
 </span><span class="lnt">23
+</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Java</span> <span class="kd">implements</span> <span class="n">Language</span> <span class="o">{</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Java</span> <span class="kd">implements</span> <span class="n">Object</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">()</span> <span class="o">{</span>
@@ -323,7 +320,8 @@
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Kotlin</span> <span class="kd">implements</span> <span class="n">Language</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Kotlin</span> <span class="kd">implements</span> <span class="n">Functional</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">()</span> <span class="o">{</span>
@@ -331,7 +329,7 @@
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Swift</span> <span class="kd">implements</span> <span class="n">Language</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Swift</span> <span class="kd">implements</span> <span class="n">Functional</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">execute</span><span class="o">()</span> <span class="o">{</span>
@@ -356,17 +354,23 @@
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span>
-</span></span><span class="line"><span class="cl">        <span class="n">LangPackage</span> <span class="n">langPackage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LangAdapter</span><span class="o">(</span><span class="k">new</span> <span class="n">Java</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="n">langPackage</span><span class="o">.</span><span class="na">install</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="n">langPackage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LangAdapter</span><span class="o">(</span><span class="k">new</span> <span class="n">Kotlin</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="n">langPackage</span><span class="o">.</span><span class="na">install</span><span class="o">();</span>
-</span></span><span class="line"><span class="cl">        <span class="n">langPackage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LangAdapter</span><span class="o">(</span><span class="k">new</span> <span class="n">Swift</span><span class="o">());</span>
-</span></span><span class="line"><span class="cl">        <span class="n">langPackage</span><span class="o">.</span><span class="na">install</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Object</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Java</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">object</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LanguageAdapter</span><span class="o">(</span><span class="k">new</span> <span class="n">Kotlin</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">object</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">        <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LanguageAdapter</span><span class="o">(</span><span class="k">new</span> <span class="n">Swift</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">object</span><span class="o">.</span><span class="na">execute</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><ul>
+<li>Object : 객체지향언어를 갖는 인터페이스</li>
+<li>Functional : 함수형 언어를 갖는 인터페이스</li>
+<li>LanguageAdapter : Object 인터페이스와 Functional 인터페이스를 이어주는 역할</li>
+</ul>
+<p><strong>어댑터 객체를 통해야 하므로 속도가 저하되고, 클래스가 증가되면 복잡도가 증가함.</strong></p>
+
     </div>
 
     
