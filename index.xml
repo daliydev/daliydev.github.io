@@ -106,6 +106,15 @@
     </item>
     
     <item>
+      <title>[java] Mediator 패턴</title>
+      <link>http://daliydev.github.io/post/java/mediator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/mediator/</guid>
+      <description>중재자 패턴은 클래스 간의 복잡한 관계를 캡슐화하여 하나의 클래스에서 처리하는 패턴입니다. M:N 관계를 해당 패턴을 이용하면 M:1 관계로 만들어 객체들 사이의 결합도를</description>
+    </item>
+    
+    <item>
       <title>[java] MyBatis에서 Java 타입에 맞게 변경하기(typeHandler) </title>
       <link>http://daliydev.github.io/post/java/type-handler/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
