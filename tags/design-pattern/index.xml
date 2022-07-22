@@ -115,6 +115,15 @@
     </item>
     
     <item>
+      <title>[java] Strategy 패턴</title>
+      <link>http://daliydev.github.io/post/java/strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/strategy/</guid>
+      <description>전략 패턴은 교체 가능한 알고리즘을 만드는데 사용되는 패턴이다. 동일 계열의 알고리즘을 정의하고, 각 알고리즘을 캡슐화하여 상호교환이 가능하도록 만든다. 단일</description>
+    </item>
+    
+    <item>
       <title>[java] Template 패턴</title>
       <link>http://daliydev.github.io/post/java/template/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

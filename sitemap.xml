@@ -116,6 +116,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/strategy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/java-memory/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
