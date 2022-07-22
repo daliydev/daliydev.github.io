@@ -178,6 +178,15 @@
     </item>
     
     <item>
+      <title>[java] Visitor 패턴</title>
+      <link>http://daliydev.github.io/post/java/visitor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/visitor/</guid>
+      <description>방문자 패턴은 객체 구조에서 분리시키는 패턴. 객체와 알고리즘을 분리하면 작업이 수행되는 객체의 클래스를 변경하지 않고도 새로운 알고리즘을 정의할 수 있다. 방문</description>
+    </item>
+    
+    <item>
       <title>[java] 책임 연쇄(Chain of Responsibility) 패턴</title>
       <link>http://daliydev.github.io/post/java/chain-of-responsibility/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
