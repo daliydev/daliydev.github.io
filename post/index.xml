@@ -43,6 +43,15 @@
     </item>
     
     <item>
+      <title>[java] Command 패턴</title>
+      <link>http://daliydev.github.io/post/java/command/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/command/</guid>
+      <description>커맨드 패턴은 요청을 객체로 캡슐화하여 처리하는 방식이다. 기능을 캡슐화함으로써 재사용성이 높은 클래스로 설계하는 패턴이다. 일반적으로 기능을 메서드로 정의</description>
+    </item>
+    
+    <item>
       <title>[java] Composite 패턴</title>
       <link>http://daliydev.github.io/post/java/composite/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
