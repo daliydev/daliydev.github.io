@@ -68,6 +68,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/interpreter/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/file-to-hex/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
