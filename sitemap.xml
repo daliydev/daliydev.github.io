@@ -92,6 +92,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/post/java/memento/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/post/java/type-handler/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -129,6 +135,12 @@
   
   <url>
     <loc>http://daliydev.github.io/post/java/singleton/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://daliydev.github.io/post/java/state/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
