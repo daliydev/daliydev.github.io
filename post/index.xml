@@ -43,6 +43,15 @@
     </item>
     
     <item>
+      <title>[java] Builder 패턴</title>
+      <link>http://daliydev.github.io/post/java/builder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/builder/</guid>
+      <description>빌더 패턴은 필요한 데이터만 설정하여 불필요한 코드의 양을 줄이고, 가독성을 높일 수 있다. setter 메서드가 없으므로 변경 불가능한 객체를 만들 수 있고, 내부에 여러 생성</description>
+    </item>
+    
+    <item>
       <title>[java] Command 패턴</title>
       <link>http://daliydev.github.io/post/java/command/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
