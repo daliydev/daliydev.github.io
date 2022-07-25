@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="dev" /><meta name="description" content="인터프리터 패턴은 핸동 패턴 중 하나 이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규표현식, 번역기 등이 있다. 구조 Context 모든 expression" /><meta name="keywords" content="Hugo, theme, even" />
+<meta name="author" content="dev" /><meta name="description" content="인터프리터 패턴은 행위 패턴 중 하나이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규 표현식, 번역기 등이 있다. 구조 Context 모든 expression" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -40,19 +40,19 @@
 
 
 <meta property="og:title" content="[java] Interpreter 패턴" />
-<meta property="og:description" content="인터프리터 패턴은 핸동 패턴 중 하나 이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규표현식, 번역기 등이 있다. 구조 Context 모든 expression" />
+<meta property="og:description" content="인터프리터 패턴은 행위 패턴 중 하나이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규 표현식, 번역기 등이 있다. 구조 Context 모든 expression" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://daliydev.github.io/post/java/interpreter/" /><meta property="article:section" content="post" />
 
 
 
 <meta itemprop="name" content="[java] Interpreter 패턴">
-<meta itemprop="description" content="인터프리터 패턴은 핸동 패턴 중 하나 이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규표현식, 번역기 등이 있다. 구조 Context 모든 expression">
+<meta itemprop="description" content="인터프리터 패턴은 행위 패턴 중 하나이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규 표현식, 번역기 등이 있다. 구조 Context 모든 expression">
 
 <meta itemprop="wordCount" content="622">
 <meta itemprop="keywords" content="design pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[java] Interpreter 패턴"/>
-<meta name="twitter:description" content="인터프리터 패턴은 핸동 패턴 중 하나 이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규표현식, 번역기 등이 있다. 구조 Context 모든 expression"/>
+<meta name="twitter:description" content="인터프리터 패턴은 행위 패턴 중 하나이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다. 예시로 자바 컴파일러나 정규 표현식, 번역기 등이 있다. 구조 Context 모든 expression"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -138,12 +138,12 @@
 
     
     <div class="post-content">
-      <p>인터프리터 패턴은 핸동 패턴 중 하나 이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다.<br>
-예시로 자바 컴파일러나 정규표현식, 번역기 등이 있다.</p>
+      <p>인터프리터 패턴은 행위 패턴 중 하나이고, 일련의 규칙으로 정의된 언어를 해석하는 패턴이다.<br>
+예시로 자바 컴파일러나 정규 표현식, 번역기 등이 있다.</p>
 <blockquote>
-<p>구조<br>
+<p><U><strong>구조</strong></U><br>
 <strong>Context</strong> 모든 expression 사용되는 정보. 구문 분석<br>
-<strong>Expression</strong> 모든 노드에 해당하는 클래스들의 공통으로 가져야할 연산 메서드를 정의하기 위한 인터페이스</p>
+<strong>Expression</strong> 모든 노드에 해당하는 클래스들의 공통으로 가져야 할 연산 메서드를 정의하기 위한 인터페이스</p>
 </blockquote>
 <h5 id="__예제-후위표기법을-이용한-연산__"><strong>예제) 후위표기법을 이용한 연산</strong></h5>
 <div class="highlight"><div class="chroma">
@@ -372,8 +372,8 @@
 </div>
 </div><ul>
 <li>Expression : 인터페이스. 서브 클래스에 공통으로 적용될 추상 Interpret() 메서드를 선언함.</li>
-<li>Context : 문장려을 받아 처리하는 클래스.</li>
-<li>Plus, Minus, Multiply, Division, Variable : Expression의 구현 클래스. expression은 하나의 기능만한다(SRP)</li>
+<li>Context : 문자열을 받아 처리하는 클래스.</li>
+<li>Plus, Minus, Multiply, Division, Variable : Expression의 구현 클래스. expression은 하나의 기능만 한다(SRP)</li>
 </ul>
 
     </div>
@@ -389,8 +389,8 @@
             <span class="prev-text nav-default">[java] image resize (javax.imageio.ImageIO)</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        <a class="next" href="/post/file-to-hex/">
-            <span class="next-text nav-default">[java] jpg 확장자가 gif처럼 동작하는 경우 (Convert File to Hex)</span>
+        <a class="next" href="/post/java/iterator/">
+            <span class="next-text nav-default">[java] Iterator 패턴</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
