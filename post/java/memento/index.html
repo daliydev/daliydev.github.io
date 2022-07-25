@@ -49,7 +49,7 @@
 <meta itemprop="name" content="[java] Memento 패턴">
 <meta itemprop="description" content="메멘토 패턴은 캡슐화를 유지하면서 상태를 저장/복원할 수 있는 패턴이다. 즉, 원하는 시점의 상태 복원이 가능해진다. 구조 Originator : 현재 상태를 저장하고 Memento 객체의 정보">
 
-<meta itemprop="wordCount" content="327">
+<meta itemprop="wordCount" content="333">
 <meta itemprop="keywords" content="design pattern," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[java] Memento 패턴"/>
 <meta name="twitter:description" content="메멘토 패턴은 캡슐화를 유지하면서 상태를 저장/복원할 수 있는 패턴이다. 즉, 원하는 시점의 상태 복원이 가능해진다. 구조 Originator : 현재 상태를 저장하고 Memento 객체의 정보"/>
@@ -248,7 +248,7 @@
 <li>Memento : 상태를 나타내는 클래스. Originator 객체만 접근할 수 있게 만듦.</li>
 <li>Originator : Memento의 인스턴스를 만든다.</li>
 </ul>
-<p><strong>Memento 객체를 자주 생성하는 경우 메모리를 많이 사용할 수 있고, 사용되지 않는 메모리를 추적해야 한다.</strong></p>
+<p><strong>객체가 크거나 자주 생성하는 경우 메모리를 많이 사용할 수 있다. 이유는 내부 상태를 모두 저장해야 하기 때문이다.</strong></p>
 
     </div>
 
