@@ -133,6 +133,15 @@
     </item>
     
     <item>
+      <title>[java] opencsv</title>
+      <link>http://daliydev.github.io/post/java/csv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://daliydev.github.io/post/java/csv/</guid>
+      <description>csv는 표 형태의 데이터를 저장하는 파일 형식. 텍스트 기반 형식에 비해 간결해서 차지하는 용량이 작다. 하지만 각 필드에 대한 의미를 알 수 없다. 예제) java에</description>
+    </item>
+    
+    <item>
       <title>[java] Prototype 패턴</title>
       <link>http://daliydev.github.io/post/java/prototype/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
