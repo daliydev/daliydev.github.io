@@ -49,7 +49,7 @@
 <meta itemprop="name" content="[java] String 객체 메모리 취약점">
 <meta itemprop="description" content="중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM">
 
-<meta itemprop="wordCount" content="122">
+<meta itemprop="wordCount" content="178">
 <meta itemprop="keywords" content="android,java," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[java] String 객체 메모리 취약점"/>
 <meta name="twitter:description" content="중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다. String 객체는 null을 대입해도, JVM"/>
@@ -138,21 +138,31 @@
 
     
     <div class="post-content">
-      <p>중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, Overwrite가 가능한 char[]를 이용한다.</p>
+      <p>중요 문자열을 String 멤버 변수에 담는다면 메모리에 노출되기 때문에, <strong>Overwrite가 가능한 char[]를 이용한다.</strong></p>
 <p>String 객체는 null을 대입해도, JVM에서 GC가 일어날 때까지 Reference 값만 바뀌기 때문에 기존 값은 남아 있는다.</p>
+<h5 id="__예시__"><strong>예시</strong></h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">char</span><span class="o">[]</span> <span class="n">ch</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">id</span><span class="o">).</span><span class="na">toString</span><span class="o">().</span><span class="na">toCharArray</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">ch</span><span class="o">,</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span><span class="n">0x20</span><span class="o">);</span> <span class="c1">// 쓰고난 후 0x20값으로 Overwrite
+</span></span><span class="line"><span class="cl"><span class="c1">// 중요 정보 처리 로직
+</span></span></span><span class="line"><span class="cl"><span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 메모리 초기화
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Arrays</span><span class="o">.</span><span class="na">fill</span><span class="o">(</span><span class="n">ch</span><span class="o">,</span> <span class="o">(</span><span class="kt">char</span><span class="o">)</span><span class="n">0x20</span><span class="o">);</span> <span class="c1">// 쓰고난 후 0x20값으로 Overwrite
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><p><strong>불가피하게 String 변수에 중요정보를 저장할 때는 반드시 암호화해서 저장한다.</strong></p>
+
     </div>
 
     
