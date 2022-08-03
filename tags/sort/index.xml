@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>algorithm on Daily</title>
-    <link>http://daliydev.github.io/tags/algorithm/</link>
-    <description>Recent content in algorithm on Daily</description>
+    <title>sort on Daily</title>
+    <link>http://daliydev.github.io/tags/sort/</link>
+    <description>Recent content in sort on Daily</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://daliydev.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://daliydev.github.io/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[java] 정렬 알고리즘</title>
       <link>http://daliydev.github.io/post/java/algorithm/sort/</link>

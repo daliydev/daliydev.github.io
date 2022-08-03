@@ -368,6 +368,12 @@
   </url>
   
   <url>
+    <loc>http://daliydev.github.io/tags/sort/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://daliydev.github.io/tags/sqlplus/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
